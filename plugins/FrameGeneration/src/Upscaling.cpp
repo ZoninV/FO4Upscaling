@@ -121,6 +121,7 @@ void Upscaling::LoadSettings()
 	CSimpleIniA ini;
 	ini.SetUnicode();
 	// Read defaults from MCM Config, then overlay user changes from MCM Settings
+	ini.LoadFile("Data\\F4SE\\Plugins\\FrameGeneration.ini");
 	ini.LoadFile("Data\\MCM\\Config\\FrameGeneration\\settings.ini");
 	ini.LoadFile("Data\\MCM\\Settings\\FrameGeneration.ini");
 
