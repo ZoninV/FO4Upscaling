@@ -371,6 +371,7 @@ void Upscaling::LoadSettings()
 {
 	CSimpleIniA ini;
 	ini.SetUnicode();
+	ini.LoadFile("Data\\F4SE\\Plugins\\Upscaling.ini");
 	ini.LoadFile("Data\\MCM\\Settings\\Upscaling.ini");
 
 	settings.upscaleMethodPreference = static_cast<uint>(ini.GetLongValue("Settings", "iUpscaleMethodPreference", 2));
